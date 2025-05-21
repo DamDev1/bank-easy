@@ -3,6 +3,7 @@ import Back from "@/shared/ui/back";
 import Button from "@/shared/ui/button";
 import Input from "@/shared/ui/input";
 import Label from "@/shared/ui/label";
+import { router } from "expo-router";
 import React, { Fragment, useEffect, useState } from "react";
 import { View } from "react-native";
 
@@ -83,7 +84,7 @@ export default function ForgotPassword() {
                 className="text-gray-400 font-poppinsemibold text-[12px] mt-5"
               />
               <View className="mt-5">
-                <Button text="Change password" disabled={isDisabled} />
+                <Button text="Change password" disabled={isDisabled}  onPress={() => router.push("/(auth)/new-password")}/>
               </View>
             </Fragment>
           )}
