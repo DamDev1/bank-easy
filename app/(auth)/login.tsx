@@ -31,7 +31,7 @@ export default function Login() {
             <View className="mt-5">
               <Input type="password" placeholder="Password" />
             </View>
-            <TouchableOpacity className="mt-4">
+            <TouchableOpacity className="mt-4" onPress={() => router.push("/(auth)/forgot-password")}>
               <Text className="text-right text-gray-400 font-poppinsemibold">
                 Forgot your password?
               </Text>
