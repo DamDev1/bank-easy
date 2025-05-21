@@ -43,6 +43,10 @@ export default function RootLayout() {
           name="(auth)/new-password"
           options={{ headerShown: false }}
         />
+        <Stack.Screen
+          name="(auth)/successful"
+          options={{ headerShown: false }}
+        />
       </Stack>
     </ActionSheetProvider>
   );

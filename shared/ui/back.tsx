@@ -7,7 +7,7 @@ interface BackButtonProps {
   className?: string;
   style?: StyleProp<ViewStyle>;
   textStyle?: StyleProp<TextStyle>;
-  name: string;
+  name?: string;
   color?: 'dark' | 'light' | string; // Allow custom colors
   iconSize?: number;
   iconName?: string; // Customizable icon
@@ -23,7 +23,6 @@ export default function Back({
   name,
   color = 'dark',
   iconSize = 24,
-  iconName = "chevron-back",
   onPress,
   disabled = false,
   testID,

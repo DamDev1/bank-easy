@@ -37,7 +37,7 @@ export default function NewPassword() {
             <Input type="password" onChangeText={(text) => setConfirmPassword(text)}/>
           </View>
           <View>
-            <Button text="Change password" disabled={isDisabled} />
+            <Button text="Change password" disabled={isDisabled} onPress={() => router.replace("/(auth)/successful")}/>
           </View>
         </View>
         <TouchableOpacity onPress={() => router.back()}>
