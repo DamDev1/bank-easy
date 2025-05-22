@@ -22,7 +22,7 @@ export default function Successful() {
           />
         </View>
         <View className="flex mt-10">
-          <Button text="Continue" onPress={() => router.push("/(auth)/login")} />
+          <Button text="Continue" onPress={() => router.push("/(tabs)/dashboard")} />
         </View>
       </View>
     </PlatformView>
