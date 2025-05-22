@@ -1,4 +1,5 @@
 import StackCards from "@/shared/components/custom/StackCards";
+import TransactionOptions from "@/shared/components/dashboard/transaction-options";
 import PlatformView from "@/shared/components/view-container";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import React from "react";
@@ -34,8 +35,9 @@ export default function Dashboard() {
         </View>
         <Ionicons name="notifications" size={30} color="#fff" />
       </View>
-      <View className="flex-1 bg-secondary mt-6 p-8 rounded-t-[40px] h-[100vh]">
+      <View className="flex-1 bg-secondary mt-6 p-8 rounded-t-[40px] h-[100%]">
         <StackCards/>
+        <TransactionOptions/>
       </View>
     </PlatformView>
   );
