@@ -1,6 +1,8 @@
 import PlatformView from "@/shared/components/view-container";
+import { router } from "expo-router";
 import React from "react";
 import { Image, Text, TouchableOpacity, View } from "react-native";
+
 
 const branchImage = require("../../assets/images/searchImages/Group 472.png");
 const intrestImage = require("../../assets/images/searchImages/Group 478.png");
@@ -8,13 +10,22 @@ const exchangeRateImage = require("../../assets/images/searchImages/Group 477.pn
 const exchangeImage = require("../../assets/images/searchImages/Group 490.png");
 
 const data = [
-  { icon: branchImage, label: "Branch" },
-  { icon: intrestImage, label: "Interest" },
-  { icon: exchangeRateImage, label: "Exchange rate" },
-  { icon: exchangeImage, label: "Exchange" },
+  { icon: branchImage, label: "Branch", path: "/pages/search/interest"},
+  { icon: intrestImage, label: "Interest", path: "/pages/search/interest"},
+  {
+    icon: exchangeRateImage,
+    label: "Exchange rate",
+    path: "/pages/search/interest",
+  },
+  { icon: exchangeImage, label: "Exchange", path: "/pages/search/interest"},
 ];
 
 export default function Search() {
+  const handlePress = (path: string) => {
+    if (path) {
+      router.push(path);
+    }
+  };
   return (
     <PlatformView className="bg-secondary flex-1" scrollable>
       <View className="px-5 gap-8 -mt-10">
@@ -22,6 +33,7 @@ export default function Search() {
           <TouchableOpacity
             key={index}
             className="justify-between bg-secondary border border-gray-200 rounded-[10px] p-5 flex-row"
+           onPress={() => handlePress(item.path)}
           >
             <View className="gap-2">
               <Text className="text-xl font-poppinsemibold">{item.label}</Text>
