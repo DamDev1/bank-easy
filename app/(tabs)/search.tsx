@@ -16,7 +16,7 @@ const data = [
   {
     icon: exchangeRateImage,
     label: "Exchange rate",
-    path: "/pages/search/interest",
+    path: "/pages/search/exchange-rate",
   },
   { icon: exchangeImage, label: "Exchange", path: "/pages/search/interest"},
 ];
