@@ -9,6 +9,7 @@ const intrestImage = require("../../assets/images/searchImages/Group 478.png");
 const exchangeRateImage = require("../../assets/images/searchImages/Group 477.png");
 const exchangeImage = require("../../assets/images/searchImages/Group 490.png");
 
+
 const data = [
   { icon: branchImage, label: "Branch", path: "/pages/search/interest"},
   { icon: intrestImage, label: "Interest", path: "/pages/search/interest"},
@@ -42,7 +43,7 @@ export default function Search() {
               </Text>
             </View>
             <View>
-              <Image source={item.icon} />
+              <Image source={item.icon} style={{ width: 120, height: 100 }} />
             </View>
           </TouchableOpacity>
         ))}

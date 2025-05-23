@@ -2,12 +2,13 @@ import Ionicons from "@expo/vector-icons/Ionicons";
 import { router } from "expo-router";
 import React from "react";
 import {
-    SafeAreaView,
-    StyleProp,
-    Text,
-    TextStyle,
-    TouchableOpacity,
-    ViewStyle,
+  Platform,
+  SafeAreaView,
+  StyleProp,
+  Text,
+  TextStyle,
+  TouchableOpacity,
+  ViewStyle,
 } from "react-native";
 
 interface BackButtonProps {
@@ -40,7 +41,7 @@ export default function TabHeader({
   return (
     <SafeAreaView className="bg-secondary">
       <TouchableOpacity
-        className={`flex-row gap-2 px-5 items-center ${className} my-2.5`}
+        className={`flex-row gap-2 px-5 items-center ${className} my-2.5 ${Platform.OS === "android" ? "pt-10 pb-5" : ""}`}
         style={[disabled && { opacity: 0.5 }, style]}
         onPress={() => router.back()}
         disabled={disabled}

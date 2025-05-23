@@ -6,7 +6,7 @@ export default function StackCards() {
     <View className="flex items-center justify-center">
       <Image
         source={require("../../../assets/images/card.png")}
-        className="w-[420px]"
+        resizeMode="cover"
       />
     </View>
   );

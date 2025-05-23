@@ -20,7 +20,7 @@ interface PlatformViewProps extends ViewProps {
 const PlatformView: React.FC<PlatformViewProps> = ({
   children,
   className,
-  statusBarStyle = "dark-content",
+  statusBarStyle = "light-content", 
   disableSafeArea = false,
   scrollable = false,
   ...rest

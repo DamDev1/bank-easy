@@ -35,7 +35,7 @@ export default function Dashboard() {
         </View>
         <Ionicons name="notifications" size={30} color="#fff" />
       </View>
-      <View className="flex-1 bg-secondary mt-6 p-8 rounded-t-[40px] h-[100%]">
+      <View className="flex-1 bg-secondary mt-6 pb-10  rounded-t-[40px] h-[100%]">
         <StackCards/>
         <TransactionOptions/>
       </View>

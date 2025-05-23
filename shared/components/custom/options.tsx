@@ -29,7 +29,7 @@ export default function Options() {
       {options.map((option, index) => (
         <View
           key={index}
-          className="bg-secondary p-5 border border-gray-200 rounded-[10px] w-[32%] justify-center items-center gap-3"
+          className="bg-secondary p-5 border border-gray-200 rounded-[10px] w-[31%] justify-center items-center gap-3"
         >
           <Image source={option.icon} resizeMode="contain" />
           <Text className="text-[12px] font-poppinsemibold text-center text-gray-500">

@@ -4,7 +4,7 @@ import Options from '../custom/options'
 
 export default function TransactionOptions() {
   return (
-    <View className='mt-5'>
+    <View className='mt-5 px-5'>
       <Options/>
     </View>
   )
