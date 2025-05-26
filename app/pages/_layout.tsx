@@ -11,8 +11,19 @@ export default function PagesLayout() {
         },
       }}
     >
-      <Stack.Screen name="search/interest" options={{ title: "Interest rate" }}/>
-      <Stack.Screen name="search/exchange-rate" options={{ title: "Exchange rate" }}/>
+      <Stack.Screen
+        name="search/interest"
+        options={{ title: "Interest rate" }}
+      />
+      <Stack.Screen
+        name="search/exchange-rate"
+        options={{ title: "Exchange rate" }}
+      />
+      <Stack.Screen name="search/exchange" options={{ title: "Exchange" }} />
+      <Stack.Screen
+        name="search/branch"
+        options={{ title: "Branch" }}
+      />
     </Stack>
   );
 }

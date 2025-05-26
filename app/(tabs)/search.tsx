@@ -11,14 +11,14 @@ const exchangeImage = require("../../assets/images/searchImages/Group 490.png");
 
 
 const data = [
-  { icon: branchImage, label: "Branch", path: "/pages/search/interest"},
+  { icon: branchImage, label: "Branch", path: "/pages/search/branch"},
   { icon: intrestImage, label: "Interest", path: "/pages/search/interest"},
   {
     icon: exchangeRateImage,
     label: "Exchange rate",
     path: "/pages/search/exchange-rate",
   },
-  { icon: exchangeImage, label: "Exchange", path: "/pages/search/interest"},
+  { icon: exchangeImage, label: "Exchange", path: "/pages/search/exchange"},
 ];
 
 export default function Search() {
