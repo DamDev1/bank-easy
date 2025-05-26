@@ -1,6 +1,7 @@
 import PlatformView from "@/shared/components/view-container";
 import Button from "@/shared/ui/button";
 import Input from "@/shared/ui/input";
+import { router } from "expo-router";
 import React from "react";
 import { Text, View } from "react-native";
 
@@ -26,7 +27,7 @@ export default function Confirm() {
           </View>
         </View>
         <View className="mt-10">
-            <Button text="Confirm" />
+            <Button text="Confirm" onPress={() => router.push("/pages/dashboard/transfer/successful")}/>
         </View>
       </View>
     </PlatformView>

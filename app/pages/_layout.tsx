@@ -20,14 +20,21 @@ export default function PagesLayout() {
         options={{ title: "Exchange rate" }}
       />
       <Stack.Screen name="search/exchange" options={{ title: "Exchange" }} />
-      <Stack.Screen
-        name="search/branch"
-        options={{ title: "Branch" }}
-      />
+      <Stack.Screen name="search/branch" options={{ title: "Branch" }} />
 
       {/* Dashaboard stacks */}
-      <Stack.Screen name="dashboard/transfer/transfer" options={{ title: "Transfer" }} />
-       <Stack.Screen name="dashboard/transfer/confirm" options={{ title: "Confirm" }} />
+      <Stack.Screen
+        name="dashboard/transfer/transfer"
+        options={{ title: "Transfer" }}
+      />
+      <Stack.Screen
+        name="dashboard/transfer/confirm"
+        options={{ title: "Confirm" }}
+      />
+      <Stack.Screen
+        name="dashboard/transfer/successful"
+        options={{ title: "Successful" }}
+      />
     </Stack>
   );
 }
