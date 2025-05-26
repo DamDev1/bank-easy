@@ -26,7 +26,8 @@ export default function PagesLayout() {
       />
 
       {/* Dashaboard stacks */}
-      <Stack.Screen name="dashboard/transfer" options={{ title: "Transfer" }} />
+      <Stack.Screen name="dashboard/transfer/transfer" options={{ title: "Transfer" }} />
+       <Stack.Screen name="dashboard/transfer/confirm" options={{ title: "Confirm" }} />
     </Stack>
   );
 }

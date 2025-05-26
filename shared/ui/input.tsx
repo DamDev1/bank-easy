@@ -2,12 +2,12 @@ import Feather from "@expo/vector-icons/Feather";
 import React, { useEffect, useState } from "react";
 import {
   KeyboardTypeOptions,
+  Text,
   TextInput,
   TouchableOpacity,
   View,
   ViewStyle
 } from "react-native";
-import Label from "./label";
 
 type InputType = "email" | "text" | "password" | "numeric";
 
@@ -79,8 +79,8 @@ export default function Input({
   };
 
   return (
-    <View style={containerStyle} className={className}>
-      {text && <Label text={text} />}
+    <View style={containerStyle} className={`${className}`}>
+      {text && <Text className="text-gray-500 font-poppinsemibold mb-2">{text}</Text>}
       <View className="border border-gray-300 p-5 px-3 rounded-2xl flex flex-row items-center justify-between">
         <TextInput
           placeholder={placeholder}

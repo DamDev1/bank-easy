@@ -16,7 +16,7 @@ const reportIcon = require("../../../assets/images/icons/file-paragraph 1.png");
 export default function Options() {
   const options = [
     { icon: walletIcon, label: "Account and Card", path: "/pages/dashboard/transfer" },
-    { icon: transferIcon, label: "Transfer" ,path: "/pages/dashboard/transfer"},
+    { icon: transferIcon, label: "Transfer" ,path: "/pages/dashboard/transfer/transfer"},
     { icon: withdrawIcon, label: "Withdraw" , path: "/pages/dashboard/transfer"},
     { icon: mobilePrepaid, label: "Mobile prepaid", path: "/pages/dashboard/transfer" },
     { icon: depositIcon, label: "Pay the bill", path: "/pages/dashboard/transfer" },

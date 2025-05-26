@@ -5,6 +5,7 @@ import Button from "@/shared/ui/button";
 import Input from "@/shared/ui/input";
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 import Checkbox from "expo-checkbox";
+import { router } from "expo-router";
 import React, { useState } from "react";
 import { Text, TextInput, View } from "react-native";
 
@@ -42,7 +43,7 @@ export default function Transfer() {
             <Text className="text-gray-500">Save to directory of beneficiary </Text>
         </View>
         <View className="mt-10">
-            <Button text="Confirm" disabled/>
+            <Button text="Confirm" onPress={() => router.push('/pages/dashboard/transfer/confirm')}/>
         </View>
       </View>
     </PlatformView>
