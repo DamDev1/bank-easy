@@ -1,5 +1,5 @@
 import PlatformView from "@/shared/components/view-container";
-import SelectPopupModal from "@/shared/pages-components/search/branch/select-modal";
+import SelectPopupModal from "@/shared/pages-components/search/exchange/select-modal";
 import Button from "@/shared/ui/button";
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 import React, { useState } from "react";
@@ -54,7 +54,7 @@ export default function Exchange() {
       <View className="p-5">
         <View>
           <Text className="text-base font-poppinsemibold">From</Text>
-          <View className="border border-gray-200 rounded-xl p-3 mt-3 flex-row justify-between">
+          <View className="border border-gray-200 rounded-xl p-4 mt-3 flex-row justify-between">
             <TextInput
               keyboardType="numeric"
               placeholder="0.00"
@@ -70,12 +70,12 @@ export default function Exchange() {
               <View className="">
                 <MaterialIcons
                   name="keyboard-arrow-up"
-                  size={24}
+                  size={20}
                   color="gray"
                 />
                 <MaterialIcons
                   name="keyboard-arrow-down"
-                  size={24}
+                  size={20}
                   color="gray"
                   className="-mt-3"
                 />
@@ -92,7 +92,7 @@ export default function Exchange() {
 
         <View>
           <Text className="text-base font-poppinsemibold">To</Text>
-          <View className="border border-gray-200 rounded-xl p-3 mt-3 flex-row justify-between">
+          <View className="border border-gray-200 rounded-xl p-4 mt-3 flex-row justify-between">
             <TextInput
               keyboardType="numeric"
               placeholder="0.00"
@@ -108,12 +108,12 @@ export default function Exchange() {
               <View className="">
                 <MaterialIcons
                   name="keyboard-arrow-up"
-                  size={24}
+                  size={20}
                   color="gray"
                 />
                 <MaterialIcons
                   name="keyboard-arrow-down"
-                  size={24}
+                  size={20}
                   color="gray"
                   className="-mt-3"
                 />

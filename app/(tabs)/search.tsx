@@ -24,7 +24,7 @@ const data = [
 export default function Search() {
   const handlePress = (path: string) => {
     if (path) {
-      router.push(path);
+      router.push(path as any);
     }
   };
   return (

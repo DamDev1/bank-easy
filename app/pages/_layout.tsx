@@ -24,6 +24,9 @@ export default function PagesLayout() {
         name="search/branch"
         options={{ title: "Branch" }}
       />
+
+      {/* Dashaboard stacks */}
+      <Stack.Screen name="dashboard/transfer" options={{ title: "Transfer" }} />
     </Stack>
   );
 }
