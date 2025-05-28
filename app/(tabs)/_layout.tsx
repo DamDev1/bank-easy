@@ -20,6 +20,13 @@ export default function TabLayout() {
           header: ({ options }) => <TabHeader name={options.title} color="light" />,
         }}
       />
+      <Tabs.Screen
+        name="settings"
+        options={{
+          title: "Settings",
+          header: ({ options }) => <TabHeader name={options.title} color="dark" />,
+        }}
+      />
     </Tabs>
   );
 }

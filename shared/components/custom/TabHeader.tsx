@@ -39,7 +39,7 @@ export default function TabHeader({
     color === "dark" ? "white" : color === "light" ? "black" : color; // Allow custom color strings
 
   return (
-    <SafeAreaView className="bg-secondary">
+    <SafeAreaView className={color==="dark" ? "bg-primary" : "bg-white"}>
       <TouchableOpacity
         className={`flex-row gap-2 px-5 items-center ${className} my-2.5 ${Platform.OS === "android" ? "pt-10 pb-5" : ""}`}
         style={[disabled && { opacity: 0.5 }, style]}

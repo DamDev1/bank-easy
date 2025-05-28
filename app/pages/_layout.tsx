@@ -35,6 +35,11 @@ export default function PagesLayout() {
         name="dashboard/transfer/successful"
         options={{ title: "Successful" }}
       />
+
+      {/* Messsage stack */}
+      <Stack.Screen
+        name="message/[id]/chatbox"
+      />
     </Stack>
   );
 }
