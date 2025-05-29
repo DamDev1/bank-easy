@@ -55,6 +55,20 @@ export default function PagesLayout() {
         }}
       />
 
+      <Stack.Screen
+        name="dashboard/account-card/account-card"
+        options={{
+          title: "Account and Card",
+        }}
+      />
+
+      <Stack.Screen
+        name="dashboard/account-card/card"
+        options={{
+          title: "Card",
+        }}
+      />
+
       {/* Messsage stack */}
       <Stack.Screen name="message/[id]/chatbox" />
 
