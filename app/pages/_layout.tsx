@@ -46,6 +46,10 @@ export default function PagesLayout() {
         name="settings/app-information"
         options={{ title: "App Information" }}
       />
+      <Stack.Screen
+        name="settings/password"
+        options={{ title: "Change Password" }}
+      />
     </Stack>
   );
 }

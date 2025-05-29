@@ -21,7 +21,7 @@ export default function Settings() {
         </View>
 
         <View className="px-5 gap-10 mt-10">
-          <TouchableOpacity className="flex-row items-center justify-between pb-5 border-b border-gray-200">
+          <TouchableOpacity className="flex-row items-center justify-between pb-5 border-b border-gray-200" onPress={() => router.push("/pages/settings/password")}>
             <Text className="text-[16px] font-poppinsemibold">Password</Text>
             <AntDesign name="right" size={24} color="gray" />
           </TouchableOpacity>
