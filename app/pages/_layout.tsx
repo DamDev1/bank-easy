@@ -40,6 +40,12 @@ export default function PagesLayout() {
       <Stack.Screen
         name="message/[id]/chatbox"
       />
+
+      {/* App Information */}
+      <Stack.Screen
+        name="settings/app-information"
+        options={{ title: "App Information" }}
+      />
     </Stack>
   );
 }
