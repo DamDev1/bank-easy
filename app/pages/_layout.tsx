@@ -35,11 +35,28 @@ export default function PagesLayout() {
         name="dashboard/transfer/successful"
         options={{ title: "Successful" }}
       />
+      <Stack.Screen
+        name="dashboard/transaction-report/transactions"
+        options={{
+          title: "Transaction report",
+          header(props) {
+            return <TabHeader name={props.options.title} color="dark" />;
+          },
+        }}
+      />
+
+      <Stack.Screen
+        name="dashboard/transaction-report/all-transaction"
+        options={{
+          title: "Transaction report",
+          header(props) {
+            return <TabHeader name={props.options.title} color="light" />;
+          },
+        }}
+      />
 
       {/* Messsage stack */}
-      <Stack.Screen
-        name="message/[id]/chatbox"
-      />
+      <Stack.Screen name="message/[id]/chatbox" />
 
       {/* App Information */}
       <Stack.Screen

@@ -22,7 +22,7 @@ export default function Options() {
     { icon: depositIcon, label: "Pay the bill", path: "/pages/dashboard/transfer" },
     { icon: saveOnlineIcon, label: "Save online", path: "/pages/dashboard/transfer" },
     { icon: creditCardIcon, label: "Credit card", path: "/pages/dashboard/transfer" },
-    { icon: reportIcon, label: "Transaction report", path: "/pages/dashboard/transfer" },
+    { icon: reportIcon, label: "Transaction report", path: "/pages/dashboard/transaction-report/transactions" },
     { icon: beneficiaryIcon, label: "Beneficiary",path: "/pages/dashboard/transfer" },
   ];
   return (
