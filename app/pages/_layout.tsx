@@ -97,7 +97,14 @@ export default function PagesLayout() {
         name="dashboard/mobile-prepaid/mobile-prepaid"
         options={{ title: "Mobile Prepaid" }}
       />
-
+      <Stack.Screen
+        name="dashboard/mobile-prepaid/confirm"
+        options={{ title: "Confirm" }}
+      />
+      <Stack.Screen
+        name="dashboard/mobile-prepaid/successful"
+        options={{ headerShown: false }}
+      />
     </Stack>
   );
 }

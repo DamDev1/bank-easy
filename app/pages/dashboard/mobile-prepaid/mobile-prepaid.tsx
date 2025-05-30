@@ -121,9 +121,9 @@ export default function MobilePrepaid() {
               <View className="mt-10">
                 <Button
                   text="Transfer"
-                  disabled
+        
                   onPress={() =>
-                    router.replace("/pages/dashboard/withdraw/successful")
+                    router.replace("/pages/dashboard/mobile-prepaid/confirm")
                   }
                 />
               </View>
