@@ -3,6 +3,7 @@ import PlatformView from "@/shared/components/view-container";
 import Button from "@/shared/ui/button";
 import Input from "@/shared/ui/input";
 import EvilIcons from "@expo/vector-icons/EvilIcons";
+import { router } from "expo-router";
 import React, { useEffect, useState } from "react";
 import { Image, Text, TextInput, TouchableOpacity, View } from "react-native";
 
@@ -125,7 +126,7 @@ export default function Withdraw() {
                 />
               </View>
               <View className="mt-10">
-                <Button text="Withdraw" disabled={!isBankTransfer} />
+                <Button text="Withdraw" disabled={!isBankTransfer} onPress={() => router.replace("/pages/dashboard/withdraw/successful")}/>
               </View>
             </View>
           </View>
