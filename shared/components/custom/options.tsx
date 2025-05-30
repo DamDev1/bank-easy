@@ -17,7 +17,7 @@ export default function Options() {
   const options = [
     { icon: walletIcon, label: "Account and Card", path: "/pages/dashboard/account-card/account-card" },
     { icon: transferIcon, label: "Transfer" ,path: "/pages/dashboard/transfer/transfer"},
-    { icon: withdrawIcon, label: "Withdraw" , path: "/pages/dashboard/transfer"},
+    { icon: withdrawIcon, label: "Withdraw" , path: "/pages/dashboard/withdraw/withdraw"},
     { icon: mobilePrepaid, label: "Mobile prepaid", path: "/pages/dashboard/transfer" },
     { icon: depositIcon, label: "Pay the bill", path: "/pages/dashboard/transfer" },
     { icon: saveOnlineIcon, label: "Save online", path: "/pages/dashboard/transfer" },

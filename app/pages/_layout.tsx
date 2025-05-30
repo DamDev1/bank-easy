@@ -66,7 +66,7 @@ export default function PagesLayout() {
         name="dashboard/account-card/card"
         options={{
           title: "Card",
-        }}
+        }}  
       />
 
       {/* Messsage stack */}
@@ -80,6 +80,12 @@ export default function PagesLayout() {
       <Stack.Screen
         name="settings/password"
         options={{ title: "Change Password" }}
+      />
+
+      {/* withdraw */}
+       <Stack.Screen
+        name="dashboard/withdraw/withdraw"
+        options={{ title: "Withdraw" }}
       />
     </Stack>
   );
