@@ -18,7 +18,7 @@ export default function Options() {
     { icon: walletIcon, label: "Account and Card", path: "/pages/dashboard/account-card/account-card" },
     { icon: transferIcon, label: "Transfer" ,path: "/pages/dashboard/transfer/transfer"},
     { icon: withdrawIcon, label: "Withdraw" , path: "/pages/dashboard/withdraw/withdraw"},
-    { icon: mobilePrepaid, label: "Mobile prepaid", path: "/pages/dashboard/transfer" },
+    { icon: mobilePrepaid, label: "Mobile prepaid", path: "/pages/dashboard/mobile-prepaid/mobile-prepaid" },
     { icon: depositIcon, label: "Pay the bill", path: "/pages/dashboard/transfer" },
     { icon: saveOnlineIcon, label: "Save online", path: "/pages/dashboard/transfer" },
     { icon: creditCardIcon, label: "Credit card", path: "/pages/dashboard/transfer" },

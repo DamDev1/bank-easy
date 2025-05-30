@@ -65,7 +65,7 @@ export default function Transfer() {
           accountNo={accountNo}
           setIsBankTransfer={setIsBankTransfer}
         />
-        <Beneficiary />
+        <Beneficiary  title="Beneficiary"/>
         <View className="mt-10 gap-5">
           {isBankTransfer && (
             <TouchableOpacity className="border border-gray-300 p-5 px-3 rounded-2xl flex flex-row items-center justify-between" onPress={() => setVisible(true)}>

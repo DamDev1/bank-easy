@@ -2,12 +2,12 @@ import Feather from "@expo/vector-icons/Feather";
 import React from "react";
 import { Image, ScrollView, Text, View } from "react-native";
 
-export default function Beneficiary() {
+export default function Beneficiary({title}:{title:string}) {
   return (
     <View className="mt-10">
       <View className="flex-row justify-between items-center">
         <Text className="text-md font-poppinsemibold text-gray-500">
-          Choose Transaction
+          {title}
         </Text>
         <Text className="text-md font-poppinsemibold text-primary">
           Find Beneficiary

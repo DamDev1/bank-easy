@@ -91,6 +91,13 @@ export default function PagesLayout() {
         name="dashboard/withdraw/successful"
         options={{ headerShown: false }}
       />
+
+      {/* Mobile Prepaid */}
+      <Stack.Screen
+        name="dashboard/mobile-prepaid/mobile-prepaid"
+        options={{ title: "Mobile Prepaid" }}
+      />
+
     </Stack>
   );
 }
